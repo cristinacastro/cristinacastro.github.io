@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div>
         <div>
-          <p>Cristina Castro</p>
+          <Link to="/"><p>Cristina Castro</p></Link>
         </div>
         <ul>
           <li style={{ listStyle: "none" }}>

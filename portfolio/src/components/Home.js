@@ -11,18 +11,18 @@ const Home = () => {
           </div>
           <ul>
             <li style={{ listStyle: "none" }}>
-              <a href="mailto:cristinacastro87@gmail.com" to="" style={{ textDecoration: "none" }}>
-                Email
+              <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=cristinacastro87@gmail.com"  style={{ textDecoration: "none" }}>
+              <img src="./img/email.png" width="25" alt="mail icon"/>
               </a>
             </li>
             <li style={{ listStyle: "none" }}>
               <a href="https://www.linkedin.com/in/cristina-castro-cipres/" style={{ textDecoration: "none" }}>
-                LinkedIn
+                <img src="./img/in.png" width="25" alt="linkedin icon"/>
               </a>
             </li>
             <li style={{ listStyle: "none" }}>
               <a href="https://github.com/cristinacastro" style={{ textDecoration: "none" }}>
-                Github
+              <img src="./img/github.png" width="25" alt="github icon"/>
               </a>
             </li>
           </ul>
