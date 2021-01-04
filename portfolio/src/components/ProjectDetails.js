@@ -9,7 +9,6 @@ export default function ProjectDetails(props) {
   console.log(theProject, "projecte");
   return (
     <div>
-    
       <h2>{theProject.title}</h2>
       <p>{theProject.description}</p>
        {theProject.allpictures.map((eachPicture, index) => {
@@ -19,6 +18,8 @@ export default function ProjectDetails(props) {
           </div>
         )
       })} 
+      <a href="/projects">Back to projects</a>
     </div>
+
   );
 }
