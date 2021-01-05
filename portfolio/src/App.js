@@ -1,8 +1,7 @@
 import React from "react";
-//import "./App.css";
+import "./App.css";
 import Navbar from "./components/Navbar";
-//import About from './components/about/About';
-//import Contact from './components/contact/Contact';
+import About from './components/About';
 import ProjectList from "./components/ProjectList";
 import ProjectDetails from "./components/ProjectDetails";
 import projects from "./projects.json";
@@ -24,9 +23,8 @@ function App() {
           )}
         />
         <Route exact path="/projects/:id" component={ProjectDetails} />
+        <Route exact path="/about" component={About} />
       </Switch>
-      {/*  <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} /> */}
     </div>
   );
 }
