@@ -65,12 +65,12 @@ const About = () => {
         <div className = "mt30">
           <p>
             You can contact me on
-            <a href="https://www.linkedin.com/in/cristina-castro-cipres/">
+            <a href="https://www.linkedin.com/in/cristina-castro-cipres/" target="_blank" rel="noopener noreferrer">
               <span>linkedin</span>
             </a>
             or email at <span>cristinacastro87@gmail.com</span> and check my
             work on
-            <a href="https://github.com/cristinacastro">
+            <a href="https://github.com/cristinacastro" target="_blank" rel="noopener noreferrer">
               <span>Github</span>.
             </a>
           </p>

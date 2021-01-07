@@ -6,12 +6,20 @@ const Footer = () => {
       <div>
         <ul className="icons-nav">
           <li>
-            <a href="https://www.linkedin.com/in/cristina-castro-cipres/">
+            <a
+              href="https://www.linkedin.com/in/cristina-castro-cipres/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="../img/in.png" width="15" alt="linkedin icon" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/cristinacastro">
+            <a
+              href="https://github.com/cristinacastro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="../img/github.png" width="15" alt="github icon" />
             </a>
           </li>
