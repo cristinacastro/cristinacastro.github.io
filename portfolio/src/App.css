@@ -468,3 +468,6 @@ a{
   padding: 0px;
 }
 
+.product-detail-img img{
+  width: 100%;
+}
