@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer"
 
 export default function ProjectDetails(props) {
   let getProject = (id) =>
@@ -7,31 +8,39 @@ export default function ProjectDetails(props) {
   const theProject = getProject(id);
   return (
     <div>
-    <div className="mt80 mb40 mr50 ml50">
-      <a href="/projects">
-        <img src="../img/back.png" width="15" />
-      </a>
-      <h2>{theProject.title}</h2>
-      <h6>
-        {theProject.title} | {theProject.intro}
-      </h6>
-      <h5>About the project</h5>
-      <p className="mt10">{theProject.description}</p>
-     
-          <div>
-      {theProject.technologies!=="" && <h5>Technologies</h5>}
-      <p className="mt10">{theProject.technologies}</p>
+      <div className="mt80 mb40 mr50 ml50">
+        <a href="/projects">
+          <img src="../img/back.png" width="15" />
+        </a>
+        <h2>{theProject.title}</h2>
+        <h6>
+          {theProject.title} | {theProject.intro}
+        </h6>
+        <h5>About the project</h5>
+        <p className="mt10">{theProject.description}</p>
+
+        <div>
+          {theProject.technologies !== "" && <h5>Technologies</h5>}
+          <p className="mt10">{theProject.technologies}</p>
+        </div>
       </div>
-    
-    </div>
+      <div>
       {theProject.allpictures.map((eachPicture, index) => {
         return (
-          <div className = "product-detail-img" key={eachPicture.id}>
+          <div className="product-detail-img" key={eachPicture.id}>
             <img src={eachPicture} alt="project pic" width="700" />
           </div>
         );
       })}
-      <a href = "">Live demo</a>
+      </div>
+      <div>
+      {theProject.link !== "" && (
+        <h5 className ="ml50"><a href={theProject.link} target="_blank" rel="noopener noreferrer">
+          View live demo
+        </a></h5>
+      )}
+      </div>
+      <Footer />
     </div>
   );
 }

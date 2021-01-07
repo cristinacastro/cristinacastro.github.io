@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer"
 
 export default function ProjectList({projects}) {
   return (
@@ -20,6 +21,7 @@ export default function ProjectList({projects}) {
                   )
               })}
           </div>
+      <Footer />
       </div>
   )
 }
