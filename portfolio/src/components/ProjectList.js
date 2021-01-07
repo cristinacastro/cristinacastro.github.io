@@ -16,7 +16,7 @@ export default function ProjectList({projects}) {
                         <div className="project-card-text mt10 ">
                         <h6>{eachProject.title} |  {eachProject.intro}</h6>
                         </div>
-                        <p className="mb20"><Link to={{pathname:`/projects/${eachProject.id}`, state: {projectsState: projects}}}>See project ></Link></p>
+                        <p className="btn-simple mb20"><Link to={{pathname:`/projects/${eachProject.id}`, state: {projectsState: projects}}}>See project <img src = "./img/next.png" width="6"/></Link></p>
                       </div>
                   )
               })}

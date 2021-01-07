@@ -2,25 +2,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+/*   generateLogo = () => {
+  let name = "cristina"
+  for (let i=0; i<name.length; i++){
+
+  }
+  } */
   return (
-    <nav className="navbar">
-      <div className="navbar ml20 mr20 mt10">
-        <div className="logo">
-          <Link to="/">
-            <p>Cristina Castro</p>
-          </Link>
-        </div>
+    <nav className="navbar mt30">
+      <div>
         <div>
           <ul className="navbar-ul">
             <li>
-              <Link to="/projects">
-                Projects
-              </Link>
+              <p><Link to="/">
+                Home
+              </Link></p>
             </li>
             <li>
-              <Link to="/about">
+              <p><Link to="/projects">
+                Projects
+              </Link></p>
+            </li>
+            <li>
+              <p><Link to="/about">
                 About
-              </Link>
+              </Link></p>
             </li>
           </ul>
         </div>

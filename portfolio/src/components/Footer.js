@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer mt100 mr50">
+    <div className="footer">
       <div>
         <ul className="icons-nav">
           <li>
@@ -17,7 +17,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="mb20 ml20">
+      <div className="mb10 ml10">
         <p>Designed and developed by Cristina Castro © 2021. </p>
       </div>
     </div>

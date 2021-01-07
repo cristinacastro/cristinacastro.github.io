@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 export default function ProjectDetails(props) {
   let getProject = (id) =>
@@ -25,20 +25,22 @@ export default function ProjectDetails(props) {
         </div>
       </div>
       <div>
-      {theProject.allpictures.map((eachPicture, index) => {
-        return (
-          <div className="product-detail-img" key={eachPicture.id}>
-            <img src={eachPicture} alt="project pic" width="700" />
-          </div>
-        );
-      })}
+        {theProject.allpictures.map((eachPicture, index) => {
+          return (
+            <div className="product-detail-img" key={eachPicture.id}>
+              <img src={eachPicture} alt="project pic" width="700" />
+            </div>
+          );
+        })}
       </div>
       <div>
-      {theProject.link !== "" && (
-        <h5 className ="ml50"><a href={theProject.link} target="_blank" rel="noopener noreferrer">
-          View live demo
-        </a></h5>
-      )}
+        {theProject.link !== "" && (
+          <div className="btn-simple ml50 mt40">
+            <a href={theProject.link} target="_blank" rel="noopener noreferrer">
+              View live demo <img src="../img/next.png" width="9" />
+            </a>
+          </div>
+        )}
       </div>
       <Footer />
     </div>

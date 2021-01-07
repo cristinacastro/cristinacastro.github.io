@@ -6,11 +6,13 @@
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  font-size:10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+  background-color: #f9f9f9;
 }
 
 /* Margin-top */
@@ -312,46 +314,47 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 2.4em;
   font-weight: 700;
   line-height: 1.3em;
   margin: 15px 0px;
-  color:#000000; 
-  letter-spacing: -2px;
+  color:#000000;
+  letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 2.7em;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.3em;
   padding: 10px 0px;
+
 }
 
 h3 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 h4 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 600;
-  color:#ce4a4a; 
+  color:#000000; 
   letter-spacing: 0.3px;
   margin: 10px 0 10px 0;
 }
 
 h5 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 700;
-  color:#ce4a4a; 
+  color:#000000; 
   letter-spacing: 1.3px;
   text-transform: uppercase;
   margin:30px 0 10px 0;
 }
 
 h5 a{
-  color:#ce4a4a; 
+  color:#000000; 
 }
 
 h5 a:hover {
@@ -359,68 +362,78 @@ h5 a:hover {
 }
 
 h6 {
-  font-size: 1.3em;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 18px;
   color: grey;
 }
 
 p {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 200;
   line-height: 28px;
 }
 
 p span{
   font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .navbar {
   display:flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
-  font-size: 0.9em;
-  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.navbar li{
+  margin-left: 10px;
 }
 
 a{
   text-decoration: none;
   color: black;
   padding: 5px;
+  font-weight: 600;
+
 }
 
 .navbar a:hover {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .navbar ul {
   display:flex;
   list-style: none;
+  width: 100%;
 }
 
 .navbar-container{
   align-content: center;
+  width: 100%;
 }
 
-.logo {
-  width: 50%;
+
+.presentation{
+  margin-top: 35%;
 }
 
 .red-btn a{
   color:white;
-  background-color: #ce4a4a;
+  background-color: #000000;
   padding: 8px;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 
 .red-btn a:hover{
-  color: #ce4a4a;
-  border: solid 2px  #ce4a4a;
+  color:#000000;
+  border: solid 2px #000000;
   background-color: transparent;
 }
 
@@ -439,7 +452,7 @@ a{
 }
 
 .about-list{
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 200;
   line-height: 24px;
   margin-top:15px;
@@ -447,11 +460,13 @@ a{
 
 .about-list li{
   list-style: none;
+  font-size: 1.5rem;
 }
 
 .about-list span{
-  color: #ce4a4a;
+  color: #000000;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .project-card-img img{
@@ -460,9 +475,10 @@ a{
 
 .project-card p{
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
+ 
 }
 
 .project-card a{
@@ -473,12 +489,25 @@ a{
   width: 100%;
 }
 
+.btn-simple a{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
 .footer {
-  font-size: 6px;
   display: flex;
   justify-content: space-between;
+  width: 85%;
+  margin: 70px auto 10px auto;
+}
+
+.footer p{
+  font-size: 01rem;
 }
 
 .footer ul{
-  margin-top: 5px;
+  margin: 5px 0 0 0px;
 }
+
