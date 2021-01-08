@@ -346,7 +346,7 @@ h4 {
 
 h5 {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 800;
   color:#000000; 
   letter-spacing: 1.3px;
   text-transform: uppercase;
@@ -362,7 +362,7 @@ h5 a:hover {
 }
 
 h6 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 18px;
   color: grey;
@@ -370,19 +370,19 @@ h6 {
 
 p {
   font-size: 1.6rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 28px;
 }
 
 p span{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.6rem;
 }
 
 .navbar {
   display:flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -398,12 +398,10 @@ a{
   color: black;
   padding: 5px;
   font-weight: 600;
-
 }
 
-.navbar a:hover {
+.navbar a:hover{
   font-weight: 800;
-  border-bottom: black solid 2px;
 }
 
 .navbar ul {
@@ -417,10 +415,33 @@ a{
   width: 100%;
 }
 
+.logo a{
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+}
 
 .presentation{
   margin-top: 35%;
 }
+
+ h1{
+  overflow: hidden;
+  transform: translateY(200px);
+  animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
+  transform-origin: top center;
+}
+
+ @keyframes slideup {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} 
+
 
 .red-btn a{
   color:white;
@@ -454,7 +475,7 @@ a{
 
 .about-list{
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 24px;
   margin-top:15px;
 }
@@ -466,20 +487,25 @@ a{
 
 .about-list span{
   color: #000000;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.5rem;
 }
+
 
 .project-card-img img{
  width: 98%;
 }
 
+.project-card-img img:hover{
+  opacity: 90%;
+ }
+
+ 
 .project-card p{
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
- 
 }
 
 .project-card a{
@@ -490,26 +516,44 @@ a{
   width: 100%;
 }
 
-.btn-simple a{
+.btn-simple{
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  flex: 1;
+  background-image: linear-gradient(to right, rgb(201, 201, 201) 0, rgb(201, 201, 201) 0);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .5s;
+}
+
+.btn-simple:hover{
+  background-size: 13% 100%;
+  background-position: 0 -0.1em;
 }
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  width: 85%;
+  flex-direction: column;
+  align-items: left;  
+  width: 100%;
   margin: 70px auto 10px auto;
 }
 
 .footer p{
-  font-size: 01rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.footer ul{
+  margin: 5px 0 10px 0;
+  justify-content: left;
 }
 
-.footer ul{
-  margin: 5px 0 0 0;
+.email-footer p {
+  text-align:left;
+  line-height: 3rem;
 }
 
 @media (min-width: 700px){
@@ -519,14 +563,13 @@ a{
   }
   h2{font-size: 3.4rem;}
   h3{font-size: 3rem;}
-  h4{}
-  h5{font-size: 1.8rem;}
+  h5{font-size: 1.8rem; font-weight: 700;}
   h6{font-size: 2rem; padding:12px 0 12px 0;}
-  p{font-size: 1.8rem; line-height: 3rem;}
-  p span{font-size: 1.8rem;}
+  p{font-size: 1.8rem; line-height: 3rem; font-weight: 200;}
+  p span{font-size: 1.8rem; font-weight: 600;}
   
   .presentation{
-    margin: 10% 0 0 60px;
+    margin: 13% 0 0 60px;
     width: 80%;
   }
 
@@ -553,12 +596,15 @@ a{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin:30px 0 0 55px;
+    justify-content: center;
+    padding-top: 20px;
+   
+
    }
 
   .project-card{
     width: 46%;
-    margin: 0;
+    margin:0px;
   }
   
   .navbar-ul a{
@@ -594,6 +640,7 @@ a{
 
   .about-list li{
     padding-bottom: 10px;
+    font-weight: 200;
   }
   
   .tools-container{
@@ -610,8 +657,10 @@ a{
   }
 
   .footer{
-    width: 65%;
-    margin-top: 90px;
+    width: 95%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 90px 0 0 0;
   }
 
   .footer img{

@@ -24,6 +24,18 @@
     "id": "2"
   },
   {
+    "title": "Breakfas.t",
+    "picture": "../img/breakfast-01.jpg",
+    "intro": "Web Development.",
+    "description": "Breakfas.t is a recipes website where the user will be able to find breakfast recipes searching by ingredient.",
+    "technologies": "Web page developed with HTML, CSS and JavaScript using Sponnacular API connection.",
+    "allpictures": ["../img/breakfast-01.jpg", "../img/breakfast-02.jpg"],
+    "video": [],
+    "category": "web-dev",
+    "link": "https://cristinacastro.github.io/Breakfast/",
+    "id": "3"
+  },
+  {
     "title": "Catalogue",
     "picture": "../img/catalogo-02.jpg",
     "intro": "Graphic Design.",
@@ -33,7 +45,7 @@
     "video": [],
     "category": "graphic-design",
     "link": "",
-    "id": "3"
+    "id": "4"
   },
   {
     "title": "Illustration",
@@ -45,7 +57,7 @@
     "video": [],
     "category": "graphic-design",
     "link": "",
-    "id": "4"
+    "id": "5"
   },
   {
     "title": "Product Design",
@@ -57,6 +69,6 @@
     "video": [],
     "category": "graphic-design",
     "link": "",
-    "id": "5"
+    "id": "6"
   }
 ]

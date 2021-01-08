@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="presentation ml50 mr50">
+      <div className="presentation ml50 mr50" >
         <h1>Hello!</h1>
         <h3>
           I'm Cristina, a junior front end developer and graphic designer based

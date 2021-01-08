@@ -10,7 +10,7 @@ export default function ProjectDetails(props) {
     <div>
       <div className="project-details mt80 mb40 mr50 ml50">
         <a href="/projects">
-          <img src="../img/back.png" width="15" />
+          <img src="../img/back.png" width="18" />
         </a>
         <h2>{theProject.title}</h2>
         <h6>
