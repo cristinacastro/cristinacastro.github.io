@@ -4,9 +4,9 @@ import Footer from "./Footer"
 
 export default function ProjectList({projects}) {
   return (
-      <div>
+      <div className="projects">
       <h1 className="ml50 mb20 mt100">Projects.</h1>
-          <div>
+          <div className="card-container">
               {projects.map((eachProject, index) => {
                   return (
                       <div className="project-card ml50 mr50" key={eachProject.id}>

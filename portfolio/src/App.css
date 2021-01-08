@@ -508,6 +508,133 @@ a{
 }
 
 .footer ul{
-  margin: 5px 0 0 0px;
+  margin: 5px 0 0 0;
 }
 
+@media (min-width: 1024px){
+  h1{
+    font-size: 4.7rem; 
+    padding-top:30px;
+  }
+  h2{font-size: 3.4rem;}
+  h3{font-size: 3rem;}
+  h4{}
+  h5{font-size: 1.8rem;}
+  h6{font-size: 2rem; padding:12px 0 12px 0;}
+  p{font-size: 1.8rem; line-height: 3rem;}
+  p span{font-size: 1.8rem;}
+  
+  .presentation{
+    margin: 10% 0 0 60px;
+    width: 80%;
+  }
+
+  .red-btn a{
+    padding:18px 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.6rem;  
+}
+
+  .red-btn {
+    margin: 50px 0 50px 0;
+  }
+
+  .icons-nav img{
+    width: 30px;
+    margin-left:10px;
+  }
+
+  .projects h1{
+    text-align: center;
+  }
+  
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:30px 0 0 55px;
+   }
+
+  .project-card{
+    width: 46%;
+    margin: 0;
+  }
+  
+  .navbar-ul a{
+    font-size: 1.5rem;
+    padding:30px;
+  }
+  
+  .btn-simple{
+    margin-bottom: 40px;
+  }
+
+  .btn-simple a{
+    font-size: 1.4rem;
+  }
+  
+  .btn-simple img{
+    width: 10px;
+  }
+
+  .project-details, .about{
+    width: 65%;
+    margin: 150px auto 40px auto;
+  }
+
+  .project-details img{
+    width: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .demo-link a {
+    margin-left: 140px;
+  }
+
+  .about-list li{
+    padding-bottom: 10px;
+  }
+  
+  .tools-container{
+    display: flex;
+  }
+
+  .about-web, .about-design {
+    width: 48%;
+    margin-top: 12px;
+  }
+
+  .about-web{
+    margin-right: 40px;
+  }
+
+  .footer{
+    width: 65%;
+    margin-top: 90px;
+  }
+
+  .footer img{
+    width: 21px;
+  }
+
+  .footer p{
+    font-size: 1.5rem;
+  }
+
+  .about-list {
+    margin-top:30px;
+  }
+
+  .about-list li {
+    font-size: 1.8rem;
+  }
+
+  .about-list span{
+    font-weight: 800;
+    margin-right: 8px;
+  }
+
+  .about h1{
+    margin-bottom: 30px;
+  }
+}

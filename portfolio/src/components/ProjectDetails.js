@@ -8,7 +8,7 @@ export default function ProjectDetails(props) {
   const theProject = getProject(id);
   return (
     <div>
-      <div className="mt80 mb40 mr50 ml50">
+      <div className="project-details mt80 mb40 mr50 ml50">
         <a href="/projects">
           <img src="../img/back.png" width="15" />
         </a>
@@ -35,7 +35,7 @@ export default function ProjectDetails(props) {
       </div>
       <div>
         {theProject.link !== "" && (
-          <div className="btn-simple ml50 mt40">
+          <div className="btn-simple demo-link ml50 mt40">
             <a href={theProject.link} target="_blank" rel="noopener noreferrer">
               View live demo <img src="../img/next.png" width="9" />
             </a>

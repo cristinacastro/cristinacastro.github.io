@@ -13,55 +13,56 @@ const About = () => {
           to <span> make good ideas work</span>. I'm a flexible, committed and
           sensitive person who loves learning and improving.
         </p>
-        <div>
-          <h5>Web development</h5>
-          <p>
-            I like to code things from scratch and I enjoy bringing ideas to
-            life.
-          </p>
-          <ul className="about-list">
-            <li>
-              <span>| </span>HTML 5
-            </li>
-            <li>
-              <span>| </span>CSS 3
-            </li>
-            <li>
-              <span>| </span>Javascript
-            </li>
-            <li>
-              <span>| </span>React JS
-            </li>
-            <li>
-              <span>| </span>Express JS
-            </li>
-            <li>
-              <span>| </span>MongoDB
-            </li>
-            <li>
-              <span>| </span>Node JS
-            </li>
-            <li>
-              <span>| </span>Git
-            </li>
-          </ul>
+        <div className = "tools-container">
+          <div className = "about-web">
+            <h5>Web development</h5>
+            <p>
+              I like to code things from scratch and I enjoy bringing ideas to
+              life.
+            </p>
+            <ul className="about-list">
+              <li>
+                <span>| </span>HTML 5
+              </li>
+              <li>
+                <span>| </span>CSS 3
+              </li>
+              <li>
+                <span>| </span>Javascript
+              </li>
+              <li>
+                <span>| </span>React JS
+              </li>
+              <li>
+                <span>| </span>Express JS
+              </li>
+              <li>
+                <span>| </span>MongoDB
+              </li>
+              <li>
+                <span>| </span>Node JS
+              </li>
+              <li>
+                <span>| </span>Git
+              </li>
+            </ul>
+          </div>
+          <div className = "about-design">
+            <h5>Graphic Design</h5>
+            <p>I value clean design patterns and attention to detail.</p>
+            <ul className="about-list">
+              <li>
+                <span>| </span>Adobe Illustrator
+              </li>
+              <li>
+                <span>| </span>Adobe Photoshop
+              </li>
+              <li>
+                <span>| </span>Adobe Indesign
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h5>Graphic Design</h5>
-          <p>I value clean design patterns and attention to detail.</p>
-          <ul className="about-list">
-            <li>
-              <span>| </span>Adobe Illustrator
-            </li>
-            <li>
-              <span>| </span>Adobe Photoshop
-            </li>
-            <li>
-              <span>| </span>Adobe Indesign
-            </li>
-          </ul>
-        </div>
-
         <div className = "mt30">
           <p>
             You can contact me on
