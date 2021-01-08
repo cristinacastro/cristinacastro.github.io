@@ -403,6 +403,7 @@ a{
 
 .navbar a:hover {
   font-weight: 800;
+  border-bottom: black solid 2px;
 }
 
 .navbar ul {
@@ -511,7 +512,7 @@ a{
   margin: 5px 0 0 0;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 700px){
   h1{
     font-size: 4.7rem; 
     padding-top:30px;

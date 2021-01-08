@@ -2,13 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
-/*   generateLogo = () => {
-  let name = "cristina"
-  for (let i=0; i<name.length; i++){
-
-  }
-  } */
   return (
     <nav className="navbar mt30">
       <div>
