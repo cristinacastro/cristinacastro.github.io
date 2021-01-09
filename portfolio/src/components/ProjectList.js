@@ -17,7 +17,7 @@ export default function ProjectList({projects}) {
                         <div className="project-card-text mt10 ">
                         <h6>{eachProject.title} |  {eachProject.intro}</h6>
                         </div>
-                        <p className="btn-simple mb20">See project <img src = "./img/next.png" width="6"/></p>
+                        <p className="btn-simple mb20">See project <img src = "./img/next.png" width="6" alt="go next icon"/></p>
                         </Link>
                       </div>
                   )

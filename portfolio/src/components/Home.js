@@ -22,7 +22,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./img/in.png" width="15" alt="linkedin icon" />
+            <img src="./img/in.png" width="23" alt="linkedin icon" />
           </a>
         </li>
         <li>
@@ -31,7 +31,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./img/github.png" width="15" alt="github icon" />
+            <img src="./img/github.png" width="23" alt="github icon" />
           </a>
         </li>
       </ul>

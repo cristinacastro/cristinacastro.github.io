@@ -10,7 +10,7 @@ export default function ProjectDetails(props) {
     <div>
       <div className="project-details mt80 mb40 mr50 ml50">
         <a href="/projects">
-          <img src="../img/back.png" width="18" />
+          <img src="../img/back.png" width="18" alt="go back icon" />
         </a>
         <h2>{theProject.title}</h2>
         <h6>
@@ -37,7 +37,7 @@ export default function ProjectDetails(props) {
         {theProject.link !== "" && (
           <div className="btn-simple demo-link ml50 mt40">
             <a href={theProject.link} target="_blank" rel="noopener noreferrer">
-              View live demo <img src="../img/next.png" width="9" />
+              View live demo <img src="../img/next.png" width="9" alt="go next icon"/>
             </a>
           </div>
         )}
