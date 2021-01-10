@@ -1,26 +1,44 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  return (
-    <div>
-      <nav className="navbar mt30">
-        <div className="logo ml60">
-          <Link to="/">Cristina Castro</Link>
+class Navbar extends React.Component {
+  constructor(props) {
+    super (props);
+
+    this.state = {
+      isSidebarOpen:false
+    }
+  }
+
+handleMenuButtonClick = () => {
+  this.setState( { isSidebarOpen: !this.state.isSidebarOpen})
+};
+
+  render() {
+    const {isSidebarOpen} = this.state;
+    return (
+      <div className="container">
+        <div className="menu-button" onClick={this.handleMenuButtonClick}>
+          <img src= "./img/menu.png"/>
         </div>
-        <div>
-          <ul className="navbar-ul mr30">
-            <li>
-              <Link to="/projects">Work</Link>
+
+        {/* Sidebar */}
+        <nav className ={ `nav ${isSidebarOpen ? 'show' : ''}`}>
+          <ul className="menu-items">
+            <li className="menu-list">
+              <a className="menu-link" href="/">Home</a>
             </li>
-            <li>
-              <Link to="/about">About</Link>
+            <li className="menu-list">
+              <a className="menu-link" href="/projects">Work</a>
+            </li>
+            <li className="menu-list">
+              <a className="menu-link" href="/about">About</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </div>
-  );
-};
+        </nav>
+      </div>
+    );
+  }
+}
+
 
 export default Navbar;
