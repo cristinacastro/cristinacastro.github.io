@@ -34,29 +34,6 @@
     "category": "web-dev",
     "link": "https://cristinacastro.github.io/Breakfast/",
     "id": "3"
-  },
-  {
-    "title": "Product Design",
-    "picture": "../img/catalogo-02.jpg",
-    "intro": "Graphic Design.",
-    "description": "Think, design and create collections to offer a personal and elegant product to our clients. Photography and catalogue layouts design.",
-    "technologies": "",
-    "allpictures": ["../img/catalogo-01.jpg", "../img/catalogo-02.jpg"],
-    "video": [],
-    "category": "graphic-design",
-    "link": "",
-    "id": "4"
-  },
-  {
-    "title": "Illustration",
-    "picture": "../img/recordatorio-04.jpg",
-    "intro": "Graphic Design.",
-    "description": "Create christmas, wedding and holy communion cards for our clients and select the best paper to print them on",
-    "technologies": "",
-    "allpictures": ["../img/recordatorio-04.jpg", "../img/recordatorio-03.jpg", "../img/recordatorio-02.jpg", "../img/recordatorio-01.jpg"],
-    "video": [],
-    "category": "graphic-design",
-    "link": "",
-    "id": "5"
   }
 ]
+
