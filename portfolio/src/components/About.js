@@ -4,7 +4,7 @@ import Footer from "./Footer"
 const About = () => {
   return (
     <div>
-      <div className="about ml50 mr50 mt100">
+      <div className="about pl50 pr50 pt100">
         <h1>About me.</h1>
         <p>
           Hello! I'm Cristina, a <span> junior front end developer</span> and{" "}

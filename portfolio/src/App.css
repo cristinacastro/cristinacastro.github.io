@@ -320,7 +320,20 @@ h1 {
   margin: 15px 0px;
   color:#000000;
   letter-spacing: -1px;
+  overflow: hidden;
+  transform: translateY(200px);
+  animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
+  transform-origin: top center;
 }
+
+ @keyframes slideup {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} 
 
 h2 {
   font-size: 2.2rem;
@@ -380,17 +393,32 @@ p span{
 }
 
 .container{
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  text-align: right;
 }
 
 .nav{
-  width: 30vw;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 30px;
+  top: 0;
   z-index: 999;
-  background-color: #fff;
-  left: -32vw;
-  transition: left 0.3s ease-in;
+  background-color: #000000;
+  left: -100vw;
+  transition: right 0.3s ease-in;
+}
+
+.close {
+  padding: 8px 9px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 0 0;
+  cursor: pointer;
+}
+
+.close img{
+  width: 30px;
 }
 
 .nav.show {
@@ -398,18 +426,17 @@ p span{
 }
 
 .menu-button img{
-  width: 30px;
+  width: 25px;
 }
 
 .menu-button{
   position: relative;
-  z-index: 99;
+  z-index: 999;
   cursor:pointer;
 }
 
 .menu-items{
-  padding:0;
-  margin:0;
+ padding-top: 40%;
 }
 
 .menu-list{
@@ -419,22 +446,15 @@ p span{
 .menu-link{
   text-decoration: none;
   display:flex;
-  padding:40px 16px;
-  border-bottom: 1px solid #555;
+  justify-content: center;
+  color:#f9f9f9;
+  font-size: 4rem;
+  font-weight: 300;
+  padding:5px;
 }
 
-.navbar {
-  display:flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.2rem;
-}
-
-.navbar li{
-  margin-left: 10px;
+.menu-link:hover{
+  font-weight: 600;
 }
 
 a{
@@ -444,47 +464,9 @@ a{
   font-weight: 600;
 }
 
-.navbar a:hover{
-  font-weight: 800;
-}
-
-.navbar ul {
-  display:flex;
-  list-style: none;
-  width: 100%;
-}
-
-.navbar-container{
-  align-content: center;
-  width: 100%;
-}
-
-.logo a{
-  text-transform: capitalize;
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
-  font-weight: 800;
-}
-
 .presentation{
-  margin-top: 25%;
+  padding-top: 25%;
 }
-
- h1{
-  overflow: hidden;
-  transform: translateY(200px);
-  animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
-  transform-origin: top center;
-}
-
- @keyframes slideup {
-  0% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} 
 
 .red-btn a{
   color:white;
@@ -534,7 +516,6 @@ a{
   font-size: 1.5rem;
 }
 
-
 .project-card-img img{
  width: 98%;
 }
@@ -542,7 +523,6 @@ a{
 .project-card-img img:hover{
   opacity: 90%;
  }
-
  
 .project-card p{
   text-transform: uppercase;
@@ -573,7 +553,7 @@ a{
 }
 
 .btn-simple:hover{
-  background-size: 13% 100%;
+  background-size: 15% 100%;
   background-position: 0 -0.1em;
 }
 

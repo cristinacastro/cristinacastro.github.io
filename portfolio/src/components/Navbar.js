@@ -17,12 +17,13 @@ handleMenuButtonClick = () => {
     const {isSidebarOpen} = this.state;
     return (
       <div className="container">
-        <div className="menu-button" onClick={this.handleMenuButtonClick}>
-          <img src= "./img/menu.png"/>
+        <div className="menu-button pt20 pr20" onClick={this.handleMenuButtonClick}>
+          <img src= "./img/menu.png" alt="menu icon"/>
         </div>
 
         {/* Sidebar */}
         <nav className ={ `nav ${isSidebarOpen ? 'show' : ''}`}>
+          <div className="close" onClick={this.handleMenuButtonClick}><img src="./img/close.png" alt="closing icon"/></div>
           <ul className="menu-items">
             <li className="menu-list">
               <a className="menu-link" href="/">Home</a>

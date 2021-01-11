@@ -8,7 +8,7 @@ export default function ProjectDetails(props) {
   const theProject = getProject(id);
   return (
     <div>
-      <div className="project-details mt80 mb40 mr50 ml50">
+      <div className="project-details pt80 pb40 pr50 pl50">
         <a href="/projects">
           <img src="../img/back.png" width="18" alt="go back icon" />
         </a>
