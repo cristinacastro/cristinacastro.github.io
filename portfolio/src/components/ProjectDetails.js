@@ -35,7 +35,7 @@ export default function ProjectDetails(props) {
       </div>
       <div>
         {theProject.link !== "" && (
-          <div className="btn-simple demo-link ml50 mt40">
+          <div className="demo-link ml50 mt40">
             <a href={theProject.link} target="_blank" rel="noopener noreferrer">
               View live demo{" "}
               <img src="../img/next.png" width="9" alt="go next icon" />

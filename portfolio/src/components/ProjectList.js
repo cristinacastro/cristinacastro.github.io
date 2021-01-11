@@ -17,11 +17,18 @@ export default function ProjectList({ projects }) {
                 }}
               >
                 <div className="project-card-img">
-                  <img
+                {eachProject.picture ? <img
                     src={eachProject.picture}
                     alt="project pic"
                     width="700"
-                  />
+                  /> : <video src = {eachProject.video} alt="project video" type="video/mp4" width="700" preload="auto" />}
+
+                {/* {eachProject.picture &&   <img
+                    src={eachProject.picture}
+                    alt="project pic"
+                    width="700"
+                  /> || eachProject.video && <video src = {eachProject.video} alt="project video" width="700"/>}
+                 */}
                 </div>
                 <div className="project-card-text pt10 ">
                   <h6>
