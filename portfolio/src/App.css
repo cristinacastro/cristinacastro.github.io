@@ -324,6 +324,7 @@ h1 {
   transform: translateY(200px);
   animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
   transform-origin: top center;
+  margin: 0;
 }
 
  @keyframes slideup {
@@ -436,7 +437,12 @@ p span{
 }
 
 .menu-items{
- padding-top: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  text-align: center;
 }
 
 .menu-list{
@@ -592,7 +598,7 @@ a{
   p span{font-size: 1.8rem; font-weight: 600;}
   
   .presentation{
-    margin: 13% 0 0 60px;
+    padding: 13% 0 0 60px;
     width: 80%;
   }
 
@@ -647,7 +653,7 @@ a{
 
   .project-details, .about{
     width: 65%;
-    margin: 150px auto 40px auto;
+    padding: 150px auto 40px auto;
   }
 
   .project-details img{
@@ -657,6 +663,10 @@ a{
   
   .demo-link a {
     margin-left: 140px;
+  }
+
+  .about {
+    margin:0 auto;
   }
 
   .about-list li{
@@ -670,18 +680,18 @@ a{
 
   .about-web, .about-design {
     width: 48%;
-    margin-top: 12px;
+    padding-top: 12px;
   }
 
   .about-web{
-    margin-right: 40px;
+    padding-right: 40px;
   }
 
   .footer{
     width: 95%;
     justify-content: space-between;
     flex-direction: row;
-    margin: 90px 0 0 0;
+    padding: 60px 20px 10px 20px;
   }
 
   .footer img{
@@ -693,7 +703,7 @@ a{
   }
 
   .about-list {
-    margin-top:30px;
+    padding-top:30px;
   }
 
   .about-list li {
