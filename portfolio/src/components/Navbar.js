@@ -1,32 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  return (
-    <nav className="navbar mt30">
-      <div>
-        <div>
-          <ul className="navbar-ul">
-            <li>
-              <p><Link to="/">
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isSidebarOpen: false,
+    };
+  }
+
+  handleMenuButtonClick = () => {
+    this.setState({ isSidebarOpen: !this.state.isSidebarOpen });
+  };
+
+  render() {
+    const { isSidebarOpen } = this.state;
+    return (
+      <div className="container">
+        <div
+          className="menu-button pt20 pr20"
+          onClick={this.handleMenuButtonClick}
+        >
+          <img src="./img/menu.png" alt="menu icon" />
+        </div>
+
+        <nav className={`nav ${isSidebarOpen ? "show" : ""}`}>
+          <div className="close" onClick={this.handleMenuButtonClick}>
+            <img src="./img/close.png" alt="closing icon" />
+          </div>
+          <ul className="menu-items">
+            <li className="menu-list">
+              <a className="menu-link" href="/">
                 Home
-              </Link></p>
+              </a>
             </li>
-            <li>
-              <p><Link to="/projects">
-                Projects
-              </Link></p>
+            <li className="menu-list">
+              <a className="menu-link" href="/projects">
+                Work
+              </a>
             </li>
-            <li>
-              <p><Link to="/about">
+            <li className="menu-list">
+              <a className="menu-link" href="/about">
                 About
-              </Link></p>
+              </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
-  );
-};
+    );
+  }
+}
 
 export default Navbar;

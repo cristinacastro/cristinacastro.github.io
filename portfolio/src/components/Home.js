@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="presentation ml50 mr50">
+      <div className="presentation pl50 pr50" >
         <h1>Hello!</h1>
         <h3>
           I'm Cristina, a junior front end developer and graphic designer based
@@ -22,7 +22,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./img/in.png" width="15" alt="linkedin icon" />
+            <img src="./img/in.png" width="23" alt="linkedin icon" />
           </a>
         </li>
         <li>
@@ -31,7 +31,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./img/github.png" width="15" alt="github icon" />
+            <img src="./img/github.png" width="23" alt="github icon" />
           </a>
         </li>
       </ul>
