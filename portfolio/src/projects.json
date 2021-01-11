@@ -36,12 +36,12 @@
     "id": "3"
   },
   {
-    "title": "Catalogue",
+    "title": "Product Design",
     "picture": "../img/catalogo-02.jpg",
     "intro": "Graphic Design.",
-    "description": "Create catalogue layouts for products and price lists.",
+    "description": "Think, design and create collections to offer a personal and elegant product to our clients. Photography and catalogue layouts design.",
     "technologies": "",
-    "allpictures": ["../img/catalogo-01.jpg", "../img/catalogo-02.jpg", "../img/catalogo-03.jpg"],
+    "allpictures": ["../img/catalogo-01.jpg", "../img/catalogo-02.jpg"],
     "video": [],
     "category": "graphic-design",
     "link": "",
@@ -58,17 +58,5 @@
     "category": "graphic-design",
     "link": "",
     "id": "5"
-  },
-  {
-    "title": "Product Design",
-    "picture": "../img/labcolor-01.jpg",
-    "intro": "Product Design and Photography.",
-    "description": "Think, design and create collections to offer a personal and elegant product to our clients",
-    "technologies": "",
-    "allpictures": ["../img/labcolor-01.jpg"],
-    "video": [],
-    "category": "graphic-design",
-    "link": "",
-    "id": "6"
   }
 ]
