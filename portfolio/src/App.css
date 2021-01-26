@@ -1,12 +1,10 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 * {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  font-size:10px;
+  font-size: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
 }
@@ -299,10 +297,10 @@ body {
 .pr100 {
   padding-right: 100px;
 }
-.w100{
+.w100 {
   width: 100%;
 }
-.ta{
+.ta {
   text-align: center;
 }
 .center-div {
@@ -318,7 +316,7 @@ h1 {
   font-weight: 700;
   line-height: 1.3em;
   margin: 15px 0px;
-  color:#000000;
+  color: #000000;
   letter-spacing: -1px;
   overflow: hidden;
   transform: translateY(200px);
@@ -327,21 +325,20 @@ h1 {
   margin: 0;
 }
 
- @keyframes slideup {
+@keyframes slideup {
   0% {
     transform: translateY(15px);
   }
   100% {
     transform: translateY(0px);
   }
-} 
+}
 
 h2 {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.3em;
   padding: 10px 0px;
-
 }
 
 h3 {
@@ -353,7 +350,7 @@ h3 {
 h4 {
   font-size: 2.5rem;
   font-weight: 600;
-  color:#000000; 
+  color: #000000;
   letter-spacing: 0.3px;
   margin: 10px 0 10px 0;
 }
@@ -361,18 +358,18 @@ h4 {
 h5 {
   font-size: 1.3rem;
   font-weight: 800;
-  color:#000000; 
+  color: #000000;
   letter-spacing: 1.3px;
   text-transform: uppercase;
-  margin:30px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
 
-h5 a{
-  color:#000000; 
+h5 a {
+  color: #000000;
 }
 
 h5 a:hover {
-  color:black;
+  color: black;
 }
 
 h6 {
@@ -388,18 +385,18 @@ p {
   line-height: 28px;
 }
 
-p span{
+p span {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-.container{
+.container {
   position: fixed;
   width: 100vw;
   text-align: right;
 }
 
-.nav{
+.nav {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -418,25 +415,25 @@ p span{
   cursor: pointer;
 }
 
-.close img{
+.close img {
   width: 30px;
 }
 
 .nav.show {
-  left:0;
+  left: 0;
 }
 
-.menu-button img{
+.menu-button img {
   width: 25px;
 }
 
-.menu-button{
+.menu-button {
   position: relative;
   z-index: 999;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.menu-items{
+.menu-items {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -445,37 +442,37 @@ p span{
   text-align: center;
 }
 
-.menu-list{
+.menu-list {
   list-style: none;
 }
 
-.menu-link{
+.menu-link {
   text-decoration: none;
-  display:flex;
+  display: flex;
   justify-content: center;
-  color:#f9f9f9;
+  color: #f9f9f9;
   font-size: 4rem;
   font-weight: 300;
-  padding:5px;
+  padding: 5px;
 }
 
-.menu-link:hover{
+.menu-link:hover {
   font-weight: 600;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
   padding: 5px;
   font-weight: 600;
 }
 
-.presentation{
+.presentation {
   padding-top: 25%;
 }
 
-.red-btn a{
-  color:white;
+.red-btn a {
+  color: white;
   background-color: #000000;
   padding: 12px;
   text-transform: uppercase;
@@ -484,86 +481,90 @@ a{
   letter-spacing: 0.2rem;
 }
 
-.red-btn a:hover{
-  color:#000000;
+.red-btn a:hover {
+  color: #000000;
   border: solid 2px #000000;
   background-color: transparent;
 }
 
-.icons-nav{
+.icons-nav {
   margin-left: 45px;
   display: flex;
 }
 
 .icons-nav ul {
-  display:flex;
+  display: flex;
 }
 
-.icons-nav li{
+.icons-nav li {
   padding-right: 5px;
   list-style: none;
 }
 
-.about-list{
+.about-list {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 24px;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
-.about-list li{
+.about-list li {
   list-style: none;
   font-size: 1.5rem;
 }
 
-.about-list span{
+.about-list span {
   color: #000000;
   font-weight: 800;
   font-size: 1.5rem;
 }
 
-.project-card-img img{
- width: 98%;
+.project-card-img img {
+  width: 98%;
 }
 
-.project-card-img img:hover{
+.project-card-img img:hover {
   opacity: 90%;
- }
- 
-.project-card p{
+}
+
+.project-card p {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
 }
 
-.project-card a{
+.project-card a {
   padding: 0px;
 }
 
-.product-detail-img img{
+.product-detail-img img {
   width: 100%;
 }
 
-.btn-simple{
+.btn-simple {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   flex: 1;
-  background-image: linear-gradient(to right, rgb(226, 226, 226) 0, rgb(226, 226, 226) 0);
+  background-image: linear-gradient(
+    to right,
+    rgb(226, 226, 226) 0,
+    rgb(226, 226, 226) 0
+  );
   background-position: 0 1.2em;
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: background .5s;
+  transition: background 0.5s;
 }
 
-.btn-simple:hover{
+.btn-simple:hover {
   background-size: 15% 100%;
   background-position: 0 -0.1em;
 }
 
-.demo-link a{
+.demo-link a {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 700;
@@ -573,157 +574,178 @@ a{
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: left;  
+  align-items: left;
   width: 100%;
   margin: 70px auto 10px auto;
 }
 
-.footer p{
+.footer p {
   font-weight: 400;
   font-size: 1.3rem;
 }
-.footer ul{
+.footer ul {
   margin: 5px 0 10px 0;
   justify-content: left;
 }
 
 .email-footer p {
-  text-align:left;
+  text-align: left;
   line-height: 3rem;
 }
 
-@media (min-width: 700px){
-  h1{
-    font-size: 4.7rem; 
-    padding-top:30px;
+@media (min-width: 700px) {
+  h1 {
+    font-size: 4.7rem;
+    padding-top: 30px;
   }
-  h2{font-size: 3.4rem;}
-  h3{font-size: 3rem;}
-  h5{font-size: 1.8rem; font-weight: 700;}
-  h6{font-size: 2rem; padding:12px 0 12px 0;}
-  p{font-size: 1.8rem; line-height: 3rem; font-weight: 200;}
-  p span{font-size: 1.8rem; font-weight: 600;}
-  
-  .presentation{
+  h2 {
+    font-size: 3.4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 2rem;
+    padding: 12px 0 12px 0;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 200;
+  }
+  p span {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .presentation {
     padding: 13% 0 0 60px;
     width: 80%;
   }
 
-  .red-btn a{
-    padding:18px 20px;
+  .red-btn a {
+    padding: 18px 20px;
     font-size: 1.4rem;
-    letter-spacing: 0.6rem;  
-}
+    letter-spacing: 0.6rem;
+  }
 
   .red-btn {
     margin: 50px 0 50px 0;
   }
 
-  .icons-nav img{
+  .icons-nav img {
     width: 30px;
-    margin-left:10px;
+    margin-left: 10px;
   }
 
-  .projects h1{
+  .projects h1 {
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
   }
-  
-  .card-container{
+
+  .card-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     padding-top: 20px;
-   }
+  }
 
-  .project-card{
+  .project-card {
     width: 60%;
-    margin:0px;
+    margin: 0px;
   }
-  
-  .navbar-ul a{
+
+  .navbar-ul a {
     font-size: 1.5rem;
-    padding:30px;
+    padding: 30px;
   }
-  
-  .btn-simple{
+
+  .btn-simple {
     margin-bottom: 40px;
   }
 
-  .btn-simple a{
+  .btn-simple a {
     font-size: 1.4rem;
   }
-  
-  .btn-simple img{
+
+  .btn-simple img {
     width: 10px;
   }
 
-  .project-details, .about{
+  .project-details,
+  .about {
     width: 65%;
     padding: 150px auto 40px auto;
     margin: 0 auto;
   }
 
-  .project-details img{
+  .project-details img {
     width: 30px;
     margin-bottom: 20px;
   }
-  
+
   .demo-link a {
     margin-left: 140px;
   }
 
   .about {
-    margin:0 auto;
+    margin: 0 auto;
   }
 
-  .about-list li{
+  .about-list li {
     padding-bottom: 10px;
     font-weight: 200;
   }
-  
-  .tools-container{
+
+  .tools-container {
     display: flex;
   }
 
-  .about-web, .about-design {
+  .about-web,
+  .about-design {
     width: 48%;
     padding-top: 12px;
   }
 
-  .about-web{
+  .about-web {
     padding-right: 40px;
   }
 
-  .footer{
+  .footer {
     width: 95%;
     justify-content: space-between;
     flex-direction: row;
     padding: 60px 20px 10px 20px;
   }
 
-  .footer img{
+  .footer img {
     width: 21px;
   }
 
-  .footer p{
+  .footer p {
     font-size: 1.5rem;
   }
 
   .about-list {
-    padding-top:30px;
+    padding-top: 30px;
   }
 
   .about-list li {
     font-size: 1.8rem;
   }
 
-  .about-list span{
+  .about-list span {
     font-weight: 800;
     margin-right: 8px;
   }
 
-  .about h1{
+  .about h1 {
     margin-bottom: 30px;
   }
 }
