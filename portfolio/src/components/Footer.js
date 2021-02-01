@@ -2,8 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer pl50 pb20">
-      
+    <div className="footer pl50 pr50 pb20">
       <div>
         <div>
           <ul className="icons-nav">
@@ -31,7 +30,7 @@ const Footer = () => {
           <p>Designed and developed by Cristina Castro © 2021. </p>
         </div>
       </div>
-      <div className ="email-footer">
+      <div className="email-footer">
         <div>
           <p>Get in touch.</p>
         </div>

@@ -318,20 +318,9 @@ h1 {
   margin: 15px 0px;
   color: #000000;
   letter-spacing: -1px;
-  overflow: hidden;
-  transform: translateY(200px);
-  animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
-  transform-origin: top center;
   margin: 0;
-}
-
-@keyframes slideup {
-  0% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  width: 50%;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -388,6 +377,11 @@ p {
 p span {
   font-weight: 700;
   font-size: 1.6rem;
+}
+
+a {
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -471,6 +465,11 @@ a {
   padding-top: 25%;
 }
 
+.presentation-container {
+  animation: fadeInLeft;
+  animation-duration: 1s;
+}
+
 .red-btn a {
   color: white;
   background-color: #000000;
@@ -488,11 +487,6 @@ a {
 }
 
 .icons-nav {
-  margin-left: 45px;
-  display: flex;
-}
-
-.icons-nav ul {
   display: flex;
 }
 
@@ -501,6 +495,10 @@ a {
   list-style: none;
 }
 
+.about h1 {
+  animation: fadeInDown;
+  animation-duration: 1s;
+}
 .about-list {
   font-size: 1.5rem;
   font-weight: 400;
@@ -517,6 +515,10 @@ a {
   color: #000000;
   font-weight: 800;
   font-size: 1.5rem;
+}
+.projects h1 {
+  animation: fadeInDown;
+  animation-duration: 1s;
 }
 
 .project-card-img img {
@@ -575,7 +577,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 100%;
   margin: 70px auto 10px auto;
 }
 
@@ -622,9 +623,17 @@ a {
     font-weight: 600;
   }
 
+  .menu-button img,
+  .close img {
+    width: 35px;
+    padding: 10px;
+    height: 35px;
+  }
+
   .presentation {
-    padding: 13% 0 0 60px;
+    padding: 20% 0 0 10%;
     width: 80%;
+    margin: 0px;
   }
 
   .red-btn a {
@@ -642,10 +651,8 @@ a {
     margin-left: 10px;
   }
 
-  .projects h1 {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
+  .menu-items {
+    top: 47%;
   }
 
   .card-container {
@@ -656,6 +663,9 @@ a {
     padding-top: 20px;
   }
 
+  .projects h1 {
+    padding: 18% 0 3% 20%;
+  }
   .project-card {
     width: 60%;
     margin: 0px;
@@ -698,6 +708,10 @@ a {
     margin: 0 auto;
   }
 
+  .about h1 {
+    padding-bottom: 0;
+  }
+
   .about-list li {
     padding-bottom: 10px;
     font-weight: 200;
@@ -718,7 +732,7 @@ a {
   }
 
   .footer {
-    width: 95%;
+    width: 90%;
     justify-content: space-between;
     flex-direction: row;
     padding: 60px 20px 10px 20px;

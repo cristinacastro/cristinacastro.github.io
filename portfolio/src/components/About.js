@@ -1,11 +1,11 @@
 import React from "react";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 const About = () => {
   return (
     <div>
       <div className="about pl50 pr50 pt100">
-        <h1>About me.</h1>
+        <h1 className="pb20">About me.</h1>
         <p>
           Hello! I'm Cristina, a <span> junior front end developer</span> and{" "}
           <span>graphic designer</span> based in Barcelona. Creativity is one of
@@ -13,8 +13,8 @@ const About = () => {
           to <span> make good ideas work</span>. I'm a flexible, committed and
           sensitive person who loves learning and improving.
         </p>
-        <div className = "tools-container">
-          <div className = "about-web">
+        <div className="tools-container">
+          <div className="about-web">
             <h5>Web development</h5>
             <p>
               I like to code things from scratch and I enjoy bringing ideas to
@@ -47,7 +47,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className = "about-design">
+          <div className="about-design">
             <h5>Graphic Design</h5>
             <p>I value clean design patterns and attention to detail.</p>
             <ul className="about-list">
@@ -58,20 +58,40 @@ const About = () => {
                 <span>| </span>Adobe Photoshop
               </li>
               <li>
-                <span>| </span>Adobe Indesign
+                <span>| </span>Adobe InDesign
+              </li>
+              <li>
+                <span>| </span>Adobe Premiere
+              </li>
+              <li>
+                <span>| </span>Figma
+              </li>
+              <li>
+                <span>| </span>Miro
+              </li>
+              <li>
+                <span>| </span>Jira
               </li>
             </ul>
           </div>
         </div>
-        <div className = "mt30">
+        <div className="mt30">
           <p>
             You can contact me on
-            <a href="https://www.linkedin.com/in/cristina-castro-cipres/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/cristina-castro-cipres/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span>linkedin</span>
             </a>
             or email at <span>cristinacastro87@gmail.com</span> and check my
             work on
-            <a href="https://github.com/cristinacastro" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/cristinacastro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span>Github</span>.
             </a>
           </p>
@@ -81,6 +101,5 @@ const About = () => {
     </div>
   );
 };
-
 
 export default About;

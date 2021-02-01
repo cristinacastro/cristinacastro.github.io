@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function ProjectList({ projects }) {
   return (
-    <div className="projects">
+    <div className="projects ">
       <h1 className="pl50 pb20 pt100">Projects.</h1>
       <div className="card-container">
         {projects.map((eachProject, index) => {
