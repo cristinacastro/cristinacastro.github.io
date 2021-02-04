@@ -603,7 +603,7 @@ a {
     font-size: 3.4rem;
   }
   h3 {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
   h5 {
     font-size: 1.8rem;
@@ -631,8 +631,8 @@ a {
   }
 
   .presentation {
-    padding: 20% 0 0 10%;
-    width: 80%;
+    padding: 17% 0 0 10%;
+    width: 70%;
     margin: 0px;
   }
 
@@ -664,7 +664,7 @@ a {
   }
 
   .projects h1 {
-    padding: 18% 0 3% 20%;
+    padding: 8% 0 1% 20%;
   }
   .project-card {
     width: 60%;

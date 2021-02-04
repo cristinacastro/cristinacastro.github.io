@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import { CircleArrow as ScrollUpButton } from "react-scroll-up-button";
 
 export default function ProjectList({ projects }) {
   return (
@@ -47,6 +48,7 @@ export default function ProjectList({ projects }) {
           );
         })}
       </div>
+      <ScrollUpButton style={{ width: 35, border: "none" }} />
       <Footer />
     </div>
   );
