@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <div className="email-footer">
         <div>
-          <p>Get in touch.</p>
+          <p>Say hello:</p>
         </div>
         <div>
           <p>cristinacastro87@gmail.com</p>

@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-import { CircleArrow as ScrollUpButton } from "react-scroll-up-button";
+import ScrollTop from "react-scrolltop-button";
 
 export default function ProjectDetails(props) {
   let getProject = (id) =>
@@ -44,9 +44,7 @@ export default function ProjectDetails(props) {
           </div>
         )}
       </div>
-      <ScrollUpButton
-        style={{ width: 35, border: "none", backgroundColor: "transparent" }}
-      />
+      <ScrollTop text="BACK TO TOP" style={{ letterSpacing: "2px" }} />
       <Footer />
     </div>
   );
