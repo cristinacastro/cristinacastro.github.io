@@ -34,13 +34,19 @@ export default function ProjectDetails(props) {
           );
         })}
       </div>
-      <div>
+      <div className="demo pt40 pb40 pr50 pl50">
         {theProject.link !== "" && (
-          <div className="demo-link pl50 pt40">
-            <a href={theProject.link} target="_blank" rel="noopener noreferrer">
-              View live demo{" "}
-              <img src="../img/next.png" width="9" alt="go next icon" />
-            </a>
+          <div>
+            <div className="demo-link">
+              <a
+                href={theProject.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5 className="pr10">View live demo </h5>
+              </a>
+              <img src="../img/next.png" alt="go next icon" />
+            </div>
             <div>
               {theProject.credentials !== "" && (
                 <p className="pt10">

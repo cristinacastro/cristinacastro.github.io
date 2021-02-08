@@ -466,6 +466,12 @@ a {
   animation-duration: 1s;
 }
 
+.presentation-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .red-btn a {
   color: white;
   background-color: #000000;
@@ -474,6 +480,7 @@ a {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  border: solid 2px #000000;
 }
 
 .red-btn a:hover {
@@ -567,11 +574,19 @@ a {
   background-position: 0 -0.1em;
 }
 
-.demo-link a {
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
+.demo-link {
+  display: flex;
+  align-items: center;
+}
+
+.demo-link img {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+
+.demo-link h5 {
+  margin: 0;
 }
 
 .footer {
@@ -624,6 +639,34 @@ a {
     font-weight: 600;
   }
 
+  .navbar {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    background-color: #f9f9f9;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbar-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: 1.5px;
+  }
+
+  .navbar li {
+    list-style: none;
+  }
+
+  .logo img {
+    position: absolute;
+  }
+
   .menu-button img,
   .close img {
     width: 35px;
@@ -665,11 +708,17 @@ a {
   }
 
   .projects h1 {
-    padding: 8% 0 1% 20%;
+    padding: 10% 0 1% 20%;
   }
+
   .project-card {
     width: 60%;
     margin: 0px;
+  }
+
+  .demo-link img {
+    width: 15px;
+    height: 15px;
   }
 
   .navbar-ul a {
@@ -690,7 +739,8 @@ a {
   }
 
   .project-details,
-  .about {
+  .about,
+  .demo {
     width: 65%;
     padding: 150px auto 40px auto;
     margin: 0 auto;
@@ -699,10 +749,6 @@ a {
   .project-details img {
     width: 30px;
     margin-bottom: 20px;
-  }
-
-  .demo-link a {
-    margin-left: 140px;
   }
 
   .about {

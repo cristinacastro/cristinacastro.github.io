@@ -11,7 +11,7 @@ const Home = () => {
           in Barcelona. <br />
           Here you can find some of the works I've done so far.
         </h3>
-        <div className="red-btn mt30 mb30">
+        <div className="red-btn mt30 mb30 pr10">
           <Link to="/projects">View my projects</Link>
         </div>
         <ul className="icons-nav">

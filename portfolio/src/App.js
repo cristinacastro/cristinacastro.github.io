@@ -1,17 +1,31 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
+import NavBurger from "./components/NavBurger";
 import About from "./components/About";
 import ProjectList from "./components/ProjectList";
 import ProjectDetails from "./components/ProjectDetails";
 import projects from "./projects.json";
 import { Switch, Route } from "react-router-dom";
+import Media from "react-media";
 import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="">
-      <Navbar />
+      <Media
+        queries={{
+          mobile: "(max-width: 420px)",
+          desktop: "(min-width: 421px)",
+        }}
+      >
+        {(matches) => (
+          <div>
+            {matches.mobile && <NavBurger />}
+            {matches.desktop && <Navbar />}
+          </div>
+        )}
+      </Media>
 
       <Switch>
         <Route exact path="/" component={Home} />
