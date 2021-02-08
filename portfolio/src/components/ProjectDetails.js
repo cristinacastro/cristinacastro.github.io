@@ -36,11 +36,20 @@ export default function ProjectDetails(props) {
       </div>
       <div>
         {theProject.link !== "" && (
-          <div className="demo-link ml50 mt40">
+          <div className="demo-link pl50 pt40">
             <a href={theProject.link} target="_blank" rel="noopener noreferrer">
               View live demo{" "}
               <img src="../img/next.png" width="9" alt="go next icon" />
             </a>
+            <div>
+              {theProject.credentials !== "" && (
+                <p className="pt10">
+                  {" "}
+                  Demo credentials: <br></br>
+                  {theProject.credentials}
+                </p>
+              )}
+            </div>
           </div>
         )}
       </div>

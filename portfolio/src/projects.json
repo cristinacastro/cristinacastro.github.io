@@ -10,12 +10,10 @@
       "../img/atOnce-03.jpg",
       "../img/atOnce-02.jpg"
     ],
-    "video": [
-      "../img/atOnce-client-presentation.mp4",
-      "../img/atOnce-restaurant-presentation.mp4 "
-    ],
+    "video": [],
     "category": "web-dev",
     "link": "https://projecte2ih.herokuapp.com/",
+    "credentials": "Restaurant: restaurant1@test.com, 1234 Client: client1@test.com, 1234 (le Bistro)",
     "id": "1"
   },
   {
@@ -32,6 +30,7 @@
     "video": [],
     "category": "web-dev",
     "link": "https://project3ih.herokuapp.com/",
+    "credentials": "Email: user@user.com, Pass: user",
     "id": "2"
   },
   {
@@ -44,6 +43,7 @@
     "video": [],
     "category": "web-dev",
     "link": "https://cristinacastro.github.io/Breakfast/",
+    "credentials": "",
     "id": "3"
   }
 ]
