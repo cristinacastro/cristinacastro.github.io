@@ -404,6 +404,30 @@ a {
   transition: right 0.3s ease-in;
 }
 
+.navbar {
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  background-color: #f9f9f9;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navbar-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  letter-spacing: 1.5px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
 .close {
   padding: 8px 9px;
   display: flex;
@@ -441,6 +465,8 @@ a {
 
 .menu-list {
   list-style: none;
+  animation: fadeInTop;
+  animation-duration: 3s;
 }
 
 .menu-link {
@@ -491,6 +517,11 @@ a {
 
 .icons-nav {
   display: flex;
+}
+
+.show {
+  animation: fadeInRight;
+  animation-duration: 0.5s;
 }
 
 .icons-nav li {
@@ -639,30 +670,6 @@ a {
     font-weight: 600;
   }
 
-  .navbar {
-    width: 100%;
-    position: fixed;
-    height: 60px;
-    background-color: #f9f9f9;
-  }
-
-  .navbar-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .navbar-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    letter-spacing: 1.5px;
-  }
-
-  .navbar li {
-    list-style: none;
-  }
-
   .logo img {
     position: absolute;
   }
@@ -779,10 +786,10 @@ a {
   }
 
   .footer {
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
     flex-direction: row;
-    padding: 60px 20px 10px 20px;
+    padding: 40px 20px 10px 20px;
   }
 
   .footer img {
