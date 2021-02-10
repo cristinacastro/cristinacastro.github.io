@@ -7,8 +7,8 @@ const Home = () => {
       <section className="presentation pl50 pr50 pt100">
         <h1>Hello!</h1>
         <h3>
-          I'm Cristina, a junior front end developer and graphic designer based
-          in Barcelona. <br />
+          I'm Cristina, a front end developer and graphic designer based in
+          Barcelona. <br />
           Here you can find some of the works I've done so far.
         </h3>
         <div className="red-btn mt30 mb30 pr10">

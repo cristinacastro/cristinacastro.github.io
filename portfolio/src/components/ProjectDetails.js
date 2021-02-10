@@ -25,6 +25,7 @@ export default function ProjectDetails(props) {
           <p className="mt10">{theProject.technologies}</p>
         </div>
       </div>
+
       <div>
         {theProject.allpictures.map((eachPicture, index) => {
           return (
